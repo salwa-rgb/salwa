@@ -117,15 +117,16 @@ nav ul li a:hover {
     align-items: center;
     position: relative;
     overflow: hidden;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .bg-circle {
     position: absolute;
-    width: 400px;
+    max-width: 1200px;
     height: 400px;
     border-radius: 50%;
     background: radial-gradient(circle, rgba(20, 15, 45, 0.192), transparent 75%);
-    right: -50px;
     top: 10%;
     transform: translateY(-50%);
     z-index: 1;
@@ -133,8 +134,13 @@ nav ul li a:hover {
 }
 
 .hero-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     align-items: center;
+    position: relative;
+    z-index: 2;
     gap: 20px;
     flex-wrap: wrap;
 }
@@ -173,7 +179,7 @@ nav ul li a:hover {
 .hero-image img{
     width: 280px;
     height: 280px;
-    border-radius: 50%;
+    border-radius: 15%;
     object-fit: cover;
     border: 5px solid var(--warna-aksen);
     box-shadow: var(--shadow);
@@ -181,9 +187,13 @@ nav ul li a:hover {
 
 .about-container {
     width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     align-items: center;
-    gap: 48px;
+    position: relative;
+    justify-content: space-between;
+    gap: 20px;
     flex-wrap: wrap;
 }
 
@@ -291,11 +301,11 @@ nav ul li a:hover {
 .badge-card h3 {
   font-size: 1rem;
   margin-bottom: 8px;
-  color: white;
+  color: var(--warna-teks-muda);
 }
 
 .badge-card p {
-  color: rgba(20, 15, 45, 0.192);
+  color: var(--warna-teks-muda);
   font-size: 0.85rem;
 }
 
